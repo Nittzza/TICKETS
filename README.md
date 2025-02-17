@@ -1,3 +1,3 @@
-# Fork
+EASY TICKETS
 
-A simple text adventure game and my first webapp!
+Online Cinema Reservation Platform for booking movie tickets seamlessly.
