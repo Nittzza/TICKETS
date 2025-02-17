@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seats Unavailable</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global CSS */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ac4076;
+            color: #fff;
+        }
+
+        /* Page container */
+        .container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            background-color: #ff99cc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .container p {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        /* Fake show timings */
+        .show-timings {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .show-timing {
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .show-timing:hover {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <h2>Show Timings</h2>
+        <div class="show-timings">
+            <div class="show-timing" onclick="showPopup('Morning Show', 'Theater A', 'May 10')">Morning Show</div>
+            <div class="show-timing" onclick="showPopup('Afternoon Show', 'Theater B', 'May 11')">Afternoon Show</div>
+            <div class="show-timing" onclick="showPopup('Evening Show', 'Theater C', 'May 12')">Evening Show</div>
+        </div>
+    </div>
+
+    <script>
+        function showPopup(showTime, location, date) {
+            alert('Selected Show Time: ' + showTime + '\nLocation: ' + location + '\nDate: ' + date);
+        }
+    </script>
+</body>
+</html>
